@@ -79,10 +79,9 @@
     <main>
 
         <div class="hero bg-base-200 min-h-screen lg:px-32">
-            <div class="hero-content flex-col lg:flex-row-reverse items-center">
-                <img src="./assets/Rectangle.png" class=" rounded-lg w-1/2" />
+            <div class="hero-content grid lg:flex  items-center">
                 <div class="lg:w-1/2">
-                    <img class="p-4 -ml-20" src="./assets/Vector.png" alt="">
+                    <img class="p-4 -ml-20 hidden lg:block" src="./assets/Vector.png" alt="">
                     <button class="btn bg-white rounded-3xl py-2 px-4 mb-5"> <img src="./assets/Group 1.png" alt="">
                         About Us</button>
                     <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
@@ -107,9 +106,10 @@
                         </div>
                     </div>
                 </div>
+                <img src="./assets/Rectangle.png" class=" rounded-lg lg:mt-28" />
             </div>
         </div>
-        <section class="lg:px-32 py-24 bg-base-200">
+        <section class="lg:px-32 lg:py-24 bg-base-200 pb-10">
             <div class="text-center">
                 <button class="btn bg-white rounded-3xl py-2 px-4 mb-5"> <img src="./assets/Group 1.png" alt="">
                     How we works</button>
@@ -146,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="lg:py-24 lg:px-64">
+        <section class="lg:py-24 lg:px-64 justify-center w-full bg-[url('./assets/bg.jpg')] bg-center py-5">
             <div class="text-center">
                 <button class="btn bg-white rounded-3xl py-2 px-4 mb-5"> <img src="./assets/Group 1.png" alt="">
                     Let’s Connect</button>
@@ -157,12 +157,17 @@
                 </p>
             </div>
             <form>
-                <div class="grid grid-cols-2 gap-5 ">
-                    <input type="text" placeholder="First Name*" class="input input-bordered" />
-                    <input type="text" placeholder="Last Name*" class="input input-bordered" />
-                    <input type="number" placeholder="Phone Number*" class="input input-bordered" />
-                    <input type="email" placeholder="Email Address*" class="input input-bordered" />
-                    <textarea class="textarea textarea-bordered col-span-2 " placeholder="Write your message here"></textarea>
+                <div>
+                    <div class="lg:flex grid justify-evenly">
+                        <input type="text" placeholder="First Name*" class="input input-bordered px-28 rounded-3xl mb-5" />
+                        <input type="text" placeholder="Last Name*" class="input input-bordered px-28  rounded-3xl mb-5" />
+                    </div>
+                    <div class="grid lg:flex justify-evenly">
+                        <input type="number" placeholder="Phone Number*" class="input input-bordered px-28  rounded-3xl mb-5" />
+                        <input type="email" placeholder="Email Address*" class="input input-bordered px-28  rounded-3xl mb-5" />
+                    </div>
+                    <textarea class="textarea textarea-bordered  w-full h-80  rounded-3xl""
+                        placeholder="Write your message here"></textarea>
                 </div>
                 <a class="btn flex bg-lime-300 rounded-3xl py-1.5 px-5 items-center text-xl mt-5">Send Mail<img
                         src="./assets/arrow-up-right-01 (1).png" alt=""></a>
@@ -170,7 +175,26 @@
         </section>
     </main>
     <footer>
-
+        <div class="bg-black flex flex-col items-center text-center pt-24 pb-5 ">
+            <div class="mb-10 ">
+                <a class="btn btn-ghost text-3xl font-extrabold text-white"> <img src="./assets/arrow-up-right-01.png" alt=""> Rinterio</a>
+            </div>
+            <p class="pb-10 text-lg font-medium text-white">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, <br> featuring weathered wood, sleek metal accents.
+            </p>
+            <div class=" text-white items-center text-center mb-10">
+                <ul class="grid lg:flex gap-10">
+                    <li><a class="font-extrabold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <a class="btn bg-lime-300 rounded-3xl py-1.5 px-5 items-center text-xl mb-10">Book
+                Consult<img src="./assets/arrow-up-right-01 (1).png" alt=""></a>
+        </div>
     </footer>
 </body>
 
